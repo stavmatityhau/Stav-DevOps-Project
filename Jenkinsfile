@@ -13,7 +13,7 @@ pipeline {
         stage('Prep docker images') {
             steps {
                 sh 'docker pull node:slim || true'
-                sh 'docker pull nginx:stable || true'
+                sh 'docker pull nginx:alpine || true'
             }
         }
 
